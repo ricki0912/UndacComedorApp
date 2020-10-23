@@ -1,0 +1,16 @@
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name = "AppTheme.ToggleButton" parent = "Base.Widget.AppCompat.Button">
+        <item name = "colorButtonNormal"> @color/colorPrimaryDark </item>
+        <item name = "android:textColor"> @android:color/white </item>
+        <item name = "colorAccent"> @android:color/holo_purple </item>
+    </style>
+
+    <style name="StartTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_activate</item>
+    </style>
+</resources>

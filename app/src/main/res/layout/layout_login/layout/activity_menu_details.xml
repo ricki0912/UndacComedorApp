@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".controller.suggestion.SendSuggestionActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/side_nav_bar"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+    >
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+            <!--<android.support.design.widget.AppBarLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    android:id="@+id/appBarLayout"
+            >
+
+                <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/side_nav_bar"
+                        app:popupTheme="@style/AppTheme.PopupOverlay"
+
+                />
+            </android.support.design.widget.AppBarLayout>-->
+            <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:max="100"
+                    android:backgroundTint="@color/white"
+                    android:layout_below="@+id/framelauout"
+                    android:indeterminateTint="@color/red"
+                    android:layout_marginTop="0dp" android:visibility="gone"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" android:weightSum="2"
+                    android:background="@color/celest_eclaro">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="156dp"
+                        android:layout_height="match_parent" android:layout_weight="0.5" android:gravity="center">
+                    <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+
+                        <TextView
+                                android:layout_width="96dp"
+                                android:layout_height="96dp" android:id="@+id/textViewIconAssist"
+                                android:background="@drawable/ic_unchecked"
+                                android:textSize="70sp" android:textStyle="bold"
+                                android:textColor="@color/colorBlanco" android:visibility="visible"
+                                android:gravity="center|top"/>
+                        <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" android:id="@+id/textViewIconJustify"
+                                android:background="@drawable/icon_not_require" android:text="NR"
+                                android:textSize="30sp" android:textStyle="bold" android:textColor="@color/colorBlanco"
+                                android:layout_weight="1" android:gravity="center" android:layout_marginLeft="41dp"
+                                android:layout_marginTop="41dp" android:visibility="visible"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1.5" android:gravity="center|left"
+                        android:layout_marginRight="10dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textViewHoraryOfReser"
+                            android:textSize="30sp" android:textStyle="bold" android:gravity="center|left"
+                            android:text="No hay reserva"/>
+                    <TextView
+                            android:text="12:36pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textViewTimeAssist"
+                            android:textSize="16sp" android:visibility="gone"/>
+                    <TextView
+                            android:text="NO REQUIERE JUSTIFICACIÓN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textViewStateJustify"
+                            android:textSize="18sp" android:textStyle="bold" android:gravity="center|left"
+                            android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" android:id="@+id/liniarLayoutScoreComment">
+                <TextView
+                        android:text="Puntua y comenta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold"
+                        android:textColor="@color/colorNegroClaro" android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:gravity="center">
+                    <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/Widget.AppCompat.RatingBar"
+                            android:numStars="5"
+                            android:stepSize="1"
+                            android:rating="0"
+                            android:progressTint="@color/primary_dark"
+                            android:id="@+id/ratingBarScore"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1"
+                        android:id="@+id/LinearLayoutAddComment"
+                        android:visibility="visible">
+
+                    <Button
+                            android:text="Agregue un comentario"
+                            android:layout_width="match_parent"
+                            android:layout_height="31dp" android:id="@+id/buttonAddComment"
+                            android:layout_weight="1" android:background="@color/zxing_transparent"
+                            android:textColor="@color/greemBlue" android:gravity="center|left"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1" android:gravity="center"
+                        android:id="@+id/LinearLayouSeetComment"
+                        android:visibility="visible">
+
+                    <com.codesgood.views.JustifiedTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="No has conocido ningún paraíso ni ningún infierno. Aquí no hay felicidad ni castigo mi familia ni enemigos. Levántate en paz. Aquí acaban las palabras, como el pensamiento. Ésta ha sido tu última ilusión."
+                            android:fontFamily="sans-serif"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorNegroClaro"
+
+                            android:id="@+id/justifiedTextViewDescriptionLastNews2" android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" android:layout_marginBottom="10dp"/>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:gravity="right"
+                            android:layout_marginTop="-7dp">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="157dp"
+                                android:layout_height="31dp" android:layout_marginLeft="10dp"
+                                android:layout_marginRight="14dp">
+                            <Button
+                                    android:text="Editar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/buttonUpdComment"
+                                    android:layout_weight="1" android:background="@color/zxing_transparent"
+                                    android:textColor="@color/greemBlue" android:gravity="right|top"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1" android:gravity="center"
+                        android:id="@+id/LinearLayoutCommentReserMenuToday" android:visibility="visible"
+                >
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+                        <EditText
+                                android:id="@+id/editTextCommentReserMenuToday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/boarder"
+                                android:paddingLeft="5dp"
+
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:autoLink="all"
+                                android:lines="5"
+                                android:minLines="1"
+
+                                android:maxLines="10"
+                                android:scrollbars="none"
+                                android:inputType="textMultiLine|textCapSentences"
+
+                                android:paddingTop="10dp" android:paddingRight="5dp" android:paddingBottom="5dp"/>
+                        <!--android:gravity="top|left"-->
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/common_google_signin_btn_text_dark_default"
+                                android:text="Describe el servicio" android:gravity="center"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:gravity="right"
+                            android:layout_marginTop="-7dp">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="157dp"
+                                android:layout_height="31dp" android:layout_marginLeft="10dp"
+                                android:layout_marginRight="14dp">
+                            <Button
+                                    android:text="Cancelar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/buttonCancelComment"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/secondary_text"
+                                    android:background="@color/zxing_transparent"
+                                    android:gravity="right|top"/>
+                            <Button
+                                    android:text="Enviar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:id="@+id/buttonSendComment"
+                                    android:layout_weight="1" android:background="@color/zxing_transparent"
+                                    android:textColor="@color/greemBlue" android:gravity="right|top"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            >
+                <TextView
+                        android:text="Menú"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold"
+                        android:textColor="@color/colorNegroClaro" android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:gravity="center" android:layout_marginRight="10dp" android:layout_marginLeft="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/linearLayoutSecond"
+                            android:visibility="gone">
+                        <TextView
+                                android:text="Segundo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewSecondTitle"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:text="Segundo de segundo "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewSecondDescription"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/linearLayoutSoup"
+                            android:visibility="gone">
+                        <TextView
+                                android:text="Sopa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewSoupTitle"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:text="Segundo de segundo "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewSoupDescription"
+                        />
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/linearLayoutDessert"
+                            android:visibility="gone">
+                        <TextView
+                                android:text="Postre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewDessertTitle"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:text="Segundo de segundo "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewDessertDescription"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/linearLayoutFruit"
+                            android:visibility="gone">
+                        <TextView
+                                android:text="Fruta"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewFruitTitle"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:text="Segundo de segundo "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewFruitDescription"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/linearLayoutDrink"
+                            android:visibility="gone">
+                        <TextView
+                                android:text="Infusión"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewDrinkTitle"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:text="Segundo de segundo "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewDrinkDescription"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/linearLayoutAditional"
+                            android:visibility="gone">
+                        <TextView
+                                android:text="Adicional"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewAditionalTitle"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:text="Segundo de segundo "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewAditionalDescription"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp">
+                <TextView
+                        android:text="Programación"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold"
+                        android:textColor="@color/colorNegroClaro" android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp" android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayoutExpandArea"
+                        android:visibility="visible"
+                        android:gravity="center" android:layout_marginRight="10dp" android:layout_marginLeft="20dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Fecha de atención"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/textViewDateAttention"
+                        />
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Inicio de reservación"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewStartReservation"
+                        />
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Fin de reservación"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewEndReservation"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <TextView
+                                android:text="Estado"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp" android:textColor="@color/grayTextoMenu"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewStateReservation"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

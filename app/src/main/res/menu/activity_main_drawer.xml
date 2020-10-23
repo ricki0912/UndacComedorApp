@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/start"
+                android:icon="@drawable/reloj"
+                android:title="Inicio" android:checked="true"/>
+        <item
+                android:id="@+id/desayuno"
+                android:icon="@drawable/desayuno"
+                android:title="Desayuno"/>
+        <item
+                android:id="@+id/almuerzo"
+                android:icon="@drawable/almuerzo"
+                android:title="Almuerzo"/>
+        <item
+                android:id="@+id/cena"
+                android:icon="@drawable/cena"
+                android:title="Cena"/>
+        <item
+                android:id="@+id/faltas"
+                android:icon="@drawable/faltas"
+                android:title="Faltas" android:visible="false"/>
+        <item
+                android:id="@+id/news"
+                android:icon="@drawable/nav_faq_black"
+                android:title="Noticias" android:checked="false"/>
+        <item
+                android:id="@+id/face"
+                android:icon="@drawable/fb"
+                android:title="Facebook"/>
+        <item
+                android:id="@+id/profile"
+                android:icon="@drawable/perfil"
+                android:title="Perfil"/>
+        <item
+                android:id="@+id/about"
+                android:icon="@drawable/nav_about_black"
+                android:title="Acerca de"/>
+        <item
+                android:id="@+id/salir"
+                android:icon="@drawable/salir"
+                android:title="Cerrar Sesión"/>
+    </group>
+
+</menu>

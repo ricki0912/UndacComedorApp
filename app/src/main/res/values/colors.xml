@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlanco">#FFFFFF</color>
+
+    <color name="colorPrimero">#0065FF</color>
+    <color name="colorSegundo">#287AF7</color>
+    <color name="colorTercero">#5E9AF7</color>
+
+    <color name="colorNegro">#000000</color>
+    <color name="colorGris">#19000000</color>
+    <color name="colorGrisClaro">#11000000</color>
+    <color name="colorGrisSuave">#cccccc</color>
+
+    <color name="bey">#fcf8e3</color>
+
+    <color name="colorNegroGris">#111111</color>
+    <color name="colorNegroClaro">#181818</color>
+
+    <color name="background_item">#CCDDD3DB</color>
+
+    <color name="primary_light">#FFB74D</color>
+    <color name="primary">#FFA726</color>
+    <color name="primary_dark">#FF9800</color>
+    <color name="accent">#FF5252</color>
+    <color name="primary_text">#424242</color>
+    <color name="secondary_text">#757575</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#C91D12</color>
+
+    <color name="primaryDark">#292b3d</color>
+    <color name="graylight">#FAFAFA</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+
+    <color name="selected_color">#fff</color>
+    <color name="unselected_color">#000</color>
+    <color name="grayTextoMenu">#4A4A4A</color>
+    <color name="grisoscuro">#383838</color>
+
+    <color name="greemBlue">#03A6F0</color>
+    <color name="celest_eclaro">#EEF8FF</color>
+    <color name="gris_claro">#A4A6A7</color>
+    <color name="verde_d">#28a745</color>
+
+</resources>

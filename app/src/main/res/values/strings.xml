@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">UNDAC Comedor</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">UNDAC</string>
+    <string name="nav_header_subtitle">Guzman Tomas Jhon</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">UNDAC Comedor</string>
+
+    <string name="inicio">Inicio</string>
+    <string name="reservacion">Reservación</string>
+    <string name="desayuno">Desayuno</string>
+    <string name="almuerzo">Almuerzo</string>
+    <string name="cena">Cena</string>
+    <string name="noticias">Noticias</string>
+    <string name="perfil">Perfil</string>
+    <string name="acerca_de">Acerca de</string>
+
+    <string name="message_menu_week_newtwork">Verifique su conexión a internet para actualizar el menú.</string>
+    <string name="message_reservation_newtwork">Verifique su conexión a internet para actualizar los horarios.</string>
+    <string name="message_home_newtwork">Verifique su conexión a internet para estar actualizado</string>
+
+
+
+    /**menus/
+    <string name="home_action_update">Actualizar Inicio</string>
+    <string name="menu_week_action_update">Actualizar Menú</string>
+    <string name="horary_action_update">Actualizar Horarios</string>
+    <string name="NETWORK_ERROR_MENU">Conectese a una red para actualizar el menú</string>
+
+
+    <string name="NETWORK_ERROR">Tu dispositivo no esta conectado a intenet.</string>
+    <string name="TIMEOUT_ERROR">Error de tiempo de espera de conexión.</string>
+    <string name="NO_CONNECTION_ERROR">No hay conexión.</string>
+    <string name="SERVER_ERROR">El servidor no está respondiendo.</string>
+    <string name="UNKNOWN_ERROR">Un error desconocido ocurrío</string>
+    <string name="PARSE_ERROR">Error en la conversion. Por favor comuniquese con el área de informática.</string>
+    <string name="AUTH_FAILURE_ERROR">El servidor no pudo encontrar la solicitud requerida.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Holaaaass-->
+
+    <!-- Navigation -->
+    <string name="navigation_open">Abrir menú deslizable</string>
+    <string name="navigation_close">Cerrar menú deslizable</string>
+    <string name="navigation_menu">Menú</string>
+    <string name="navigation_balance">Saldo</string>
+    <string name="navigation_counter">Medidor</string>
+    <string name="navigation_renovation">Renovación</string>
+    <string name="navigation_map">Mapa</string>
+    <string name="navigation_faq">FAQ</string>
+    <string name="navigation_face">Fanpage</string>
+    <string name="navigation_github">Github</string>
+    <string name="navigation_about">Acerca de</string>
+
+
+    <string name="menu_action_update">Actualizar menú</string>
+    <string name="menu_copy_msg">Menú copiado</string>
+    <string name="menu_share_subject">Menú de la semana</string>
+    <string name="menu_share_banner">Compartido desde UNCmorfi</string>
+
+    <!-- Balance -->
+    <string name="balance_action_update">Actualizar tarjetas</string>
+    <string name="balance_action_copy">Copiar tarjetas</string>
+
+    <string name="balance_expiration">Fecha de vencimiento: %1$s</string>
+    <string name="balance_last_update">Última actualización %1$s</string>
+
+    <string name="balance_new_user_hint">Escribe el número de la tarjeta</string>
+    <string name="balance_new_user_button_enter">Agregar la tarjeta</string>
+    <string name="balance_new_user_button_code">Abrir lector de barras</string>
+    <string name="balance_new_user_dumb">Fijate lo que pusiste</string>
+    <string name="balance_new_user_adding">Agregando tarjeta %1$s&#8230;</string>
+
+    <string name="balance_user_options_title">Tarjeta</string>
+    <string name="balance_user_options_update">Actualizar</string>
+    <string name="balance_user_options_delete">Eliminar</string>
+    <string name="balance_user_options_copy">Copiar</string>
+    <string name="balance_user_options_barcode">Código de barras</string>
+    <string name="balance_user_options_set_name">Modificar nombre</string>
+
+    <string name="balance_delete_user_title">Eliminar tarjeta de %1$s?</string>
+    <string name="balance_delete_user_positive">Eliminar</string>
+    <string name="balance_delete_user_msg">Tarjeta eliminada</string>
+
+    <string name="balance_copy_msg">Copiado</string>
+    <string name="balance_no_cards">No hay tarjetas</string>
+
+    <string name="balance_set_name_title">Nuevo nombre</string>
+    <string name="balance_set_name_save">Guardar</string>
+
+    <string name="balance_align_barcode">Alineá el código de barras</string>
+
+    <!-- Counter -->
+    <string name="counter_action_update">Actualizar medidor</string>
+    <string name="counter_rations_title">%1$d raciones de %2$d</string>
+    <string name="counter_estimate_button">Agregar</string>
+    <string name="counter_estimate">%1$d min aprox. (%2$s)</string>
+    <string name="counter_estimate_empty">Poné a que distancia estas</string>
+    <string name="counter_distance">Ventana %1$d</string>
+    <string name="counter_chart_empty">Refrescá</string>
+    <string name="counter_chart_label_time">Raciones por tiempo</string>
+    <string name="counter_chart_label_accumulated">Raciones acumuladas</string>
+
+    <!-- Renovation -->
+    <string name="renovation_email_subject">RENOVAR</string>
+    <string name="renovation_email_body">
+        \t¡No te olvides de adjuntar el certificado de alumno
+        regular si sos estudiante!\n\n
+
+        \tO carné de Daspu, recibo de sueldo o certificado que acredite
+        relación con la UNC si eres Docente o No Docente.</string>
+
+    <!-- Map -->
+    <string name="map_central">Sede principal</string>
+    <string name="map_belgrano">Sede Belgrano</string>
+
+    <!-- FAQ -->
+    <string name="faq_action_share">Compartir</string>
+
+    <!-- About -->
+    <string name="about_app">Aplicativo de reservación</string>
+    <string name="about_source_code">Desarrollado por:</string>
+    <string name="about_fanpage">Facebook:</string>
+
+    <!-- Cualquiera -->
+    <string name="no_connection">No hay conexión</string>
+    <string name="connection_error">Error de conexión</string>
+    <string name="internal_error">Ocurrió un error</string>
+    <string name="updating">Actualizando&#8230;</string>
+    <string name="update_success">Actualizado</string>
+    <string name="update_fail">No se pudo actualizar</string>
+    <string name="new_user_success">Agregado</string>
+    <string name="action_browser">Abrir en&#8230;</string>
+    <string name="no_connection_long"> No hay conexión a Internet disponible. Por favor, revisa tu conexión a Internet nuevamente.</string>
+
+
+    <!--Start -->
+    <string name="desStart"> El comedor universitario tiene como servicio promover el buen estado nutricional y los buenos hábitos de alimentación en la población estudiantil, brindando un servicio de alimentación de calidad, sobre la base de la eficiencia, eficacia, responsabilidad, creatividad y disciplina profesional que velen por preservar la salud de los comensales preservando la calidad de vida de los estudiantes universitarios. </string>
+
+    <string name="instStart0">Para Reservar en un horario seguir las instrucciones:</string>
+    <string name="instStart1">1.- Despliega el menu lateral ≡ en donde encontraras opciones que tiene el App.</string>
+    <string name="instStart2">2.- Selecciona el turno en el que deseas realizar una reserva; \"Desayuno\", \"Almuerzo\" o \"Cena\".</string>
+    <string name="instStart3">3.- Se visualiza los dias de la semana(actual) con el menu correspondiente. Presione (>) en el dia que quieres realizar la reserva.</string>
+    <string name="instStart4">4.- Se visualiza los horarios disponibles. Para reservar un horario presione O(dentro del circulo verde). </string>
+    <string name="instStart5">5.- Se muestra una ventana emergente solicitando la confimación. Presionar \"Confirmar\". </string>
+    <string name="instStart6">6.- En la siguiente ventana emergente, tiene que mostrarte el siguiente mensaje \"Reserva procesada correctamente...\", presione \"Salir\". </string>
+    <string name="instStart7">7.- Listo. Ya realizaste una reserva con exito. </string>
+
+    <string name="horStart1">Turnos y horarios:</string>
+    <string name="horStart2">✔ Desayuno</string>
+    <string name="horStart21">Apertura: 07:00am</string>
+    <string name="horStart22">Cierre  : 08:30am</string>
+
+    <string name="horStart3">✔ Almuerzo</string>
+    <string name="horStart31">Apertura: 12:00pm</string>
+    <string name="horStart32">Cierre  : 02:30pm</string>
+
+    <string name="horStart4">✔ Cena</string>
+    <string name="horStart41">Apertura: 06:00pm</string>
+    <string name="horStart42">Cierre  : 07:30pm</string>
+
+    <string name="suggestion_short"> Envía tu idea, sugerencia, propuesta, comentario, quejas o reclamos, y entre todos mejoraremos el servicio.</string>
+    <string name="suggestion_large"> Envía tu idea, sugerencia, propuesta, comentario, quejas o reclamos, escribiendo en el siguiente cuadro de texto, y entre todos mejoraremos el servicio.</string>
+
+
+</resources>

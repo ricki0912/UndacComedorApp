@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <TextView
+
+            android:textStyle="bold"
+
+            android:textSize="14sp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textViewTitleHome"
+            android:gravity="center"
+            android:text="@string/suggestion_short" android:visibility="gone"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        tools:context=".controller.home.CHomeFragment"
+        android:id="@+id/swipeRefreshLayoutHome">
+
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

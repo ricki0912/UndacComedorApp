@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".controller.suggestion.SendSuggestionActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/side_nav_bar"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+    >
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+            <!--<android.support.design.widget.AppBarLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    android:id="@+id/appBarLayout"
+            >
+
+                <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/side_nav_bar"
+                        app:popupTheme="@style/AppTheme.PopupOverlay"
+
+                />
+            </android.support.design.widget.AppBarLayout>-->
+            <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:max="100"
+                    android:backgroundTint="@color/white"
+                    android:layout_below="@+id/framelauout"
+                    android:indeterminateTint="@color/red"
+                    android:layout_marginTop="0dp" android:visibility="gone"/>
+            <TextView
+                    android:text="@string/suggestion_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewTitle" android:gravity="center" android:layout_margin="10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView23"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:inputType="text|textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editTextSuggestion"
+                    android:hint="Sugerencia"
+
+                    android:gravity="top"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:gravity="center">
+                <Button
+                        android:text="Enviar Sugerencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/buttonSendSuggestion"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonstyleithgradient"
+                        android:textColor="@color/colorBlanco" android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:gravity="center">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textViewAllSuggestion"
+                        android:gravity="center"
+                        android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingTop="3dp"
+                        android:paddingBottom="3dp" android:textStyle="bold" android:textSize="18sp"
+                        android:textColor="@color/colorPrimary" android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".controller.CReservation"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:id="@+id/linearLayoutPrincipal"
+        >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorBlanco"
+                android:orientation="vertical"
+
+
+        >
+            <TextView
+                    android:text="Lunes 10-12-2019"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewReserTitle"
+                    android:layout_weight="1.8"
+                    tools:layout_width="match_parent" android:gravity="center" android:textSize="14sp"
+                    android:visibility="gone"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlanco"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="?attr/actionModeSplitBackground"
+                    android:text="Por Favor Seleccione un horario para ir a comer."
+                    android:id="@+id/textViewMensaje"/>
+            <TextView
+                    android:text="Lunes 10-12-2019"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewReserFecha"
+                    android:layout_weight="1.8"
+                    tools:layout_width="match_parent" android:gravity="center" android:textSize="17sp"/>
+            <android.support.constraint.Guideline
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/guideline"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/horarySwipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarStyle="outsideOverlay" >
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/horaryRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/linearLayoutReservacion">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+        </ScrollView>

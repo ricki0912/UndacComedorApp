@@ -1,0 +1,4 @@
+<resources>
+    
+    <dimen name="margin_default">64dp</dimen>
+</resources>

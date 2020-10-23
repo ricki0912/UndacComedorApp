@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginTop="0dp"
+              android:layout_marginBottom="0dp"
+              android:gravity="center">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp" android:background="@color/colorGrisClaro">
+        <TextView
+                android:text="Hoy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:gravity="center"
+                android:textSize="30sp" android:textStyle="bold"/>
+        <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/side_nav_bar"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="@color/graylight"
+                android:outlineSpotShadowColor="@color/colorPrimero"
+                app:cardCornerRadius="0dp"
+                android:id="@+id/cardViewMenuDay"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" android:layout_marginBottom="15dp">
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/recyclerReservationsToday"
+                        tools:layout_editor_absoluteY="5dp" tools:layout_editor_absoluteX="5dp">
+                </android.support.v7.widget.RecyclerView>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout_editor_absoluteY="5dp" tools:layout_editor_absoluteX="5dp"
+                        android:gravity="center">
+                    <ProgressBar
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:id="@+id/progressBarLoadingReservationsToday" android:indeterminate="true"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrisClaro">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="30dp">
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="center" android:id="@+id/linearLayout2">
+            <android.support.v7.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" app:cardBackgroundColor="@color/red"
+                    android:addStatesFromChildren="false" app:cardCornerRadius="31dp" app:cardElevation="2dp"
+                    android:id="@+id/cardViewNextPosition">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" android:gravity="center"
+                        android:animationCache="true">
+                    <Button
+                            android:layout_width="45dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/buttonNextPosition"
+                            android:background="@drawable/arrowbutton"
+                            android:fontFamily="sans-serif-light" android:gravity="center"
+                            android:layout_marginTop="-5dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="275dp"
+              android:layout_height="wrap_content" android:paddingTop="10dp">
+
+    <ImageView
+            android:layout_width="59dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_height="61dp"
+
+            app:srcCompat="@drawable/check" android:layout_marginBottom="15dp" android:id="@+id/imageViewState"/>
+
+    <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textViewMessage"
+
+            android:paddingTop="5dp" android:paddingBottom="5dp" android:textSize="14sp"
+            android:text="Felicitaciones. Su reserva se ha procesado correctamente"/>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+        android:textColor="@color/colorBlanco"
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="center|right"
+                android:text="SALIR"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/buttonSalir"
+                android:layout_height="31dp" android:background="@color/colorGris"
+                android:textColor="@color/common_google_signin_btn_text_light"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "608057432540",
+    "firebase_url": "https://undac-comedor-e1c41.firebaseio.com",
+    "project_id": "undac-comedor-e1c41",
+    "storage_bucket": "undac-comedor-e1c41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608057432540:android:c708c9d2f8c62df6d89719",
+        "android_client_info": {
+          "package_name": "com.undac.undaccomedor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608057432540-3o3reqjug1p9s6a0vol4iv9303rv00go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWI_y_gA1gwpus_3FZkodfQm-2mREHz2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608057432540-3o3reqjug1p9s6a0vol4iv9303rv00go.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
